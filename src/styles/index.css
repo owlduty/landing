@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* These styles will not be purged */
+.gradient {
+  background: linear-gradient(267.91deg, #fcc661 9.35%, #FF7170 96.48%);
+}
+
+.card-border-wrap {
+  background: linear-gradient(267.91deg, #fcc661 9.35%, #FF7170 96.48%);
+  @apply p-0.5;
+}
+
+.link {
+  @apply text-pink-600 font-semibold;
+}
+
+.link-gray {
+  @apply font-semibold text-gray-800;
+}
