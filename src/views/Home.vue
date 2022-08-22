@@ -19,7 +19,7 @@
           </p>
           <router-link
             :to="{ name: 'Home', hash: '#subscription' }"
-            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            class="mx-auto lg:mx-0 capitalize hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
             Early access
           </router-link>
@@ -86,7 +86,7 @@
             class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
           ></div>
         </div>
-        <div class="items-center mb-8 w-full">
+        <div class="items-center mb-8 md:mb-14 w-full">
           <div
             class="max-w-5xl mx-auto text-center leading-normal text-lg sm:text-2xl md:px-3 lg:mb-28"
           >
@@ -106,14 +106,14 @@
         <!-- Monitor endpoints -->
         <div class="flex flex-wrap">
           <div class="w-full sm:w-1/2 py-6">
-            <h3 class="text-3xl  font-bold leading-none mb-3">
+            <h3 class="text-3xl font-bold leading-none mb-3">
               Endpoint monitoring
             </h3>
             <p class="mb-8 text-base md:text-lg tracking-wide">
               Use our no-code tools to write API tests and simulate user
               transactions. Get insights about your endpoints performance,
-              availability, and security in any environment from 18 locations in
-              the world. Detect user-facing issues before they do and improve
+              availability, and security in any environment from several locations
+              in the world. Detect user-facing issues before they do and improve
               their experience.
             </p>
           </div>
@@ -192,7 +192,7 @@
         <!-- Highlighted tools -->
         <div class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
           <div class="card-border-wrap shadow hover:shadow-lg">
-            <div class="flex-1 overflow-hidden card bg-white md:h-64 lg:h-96">
+            <div class="flex-1 overflow-hidden card bg-white md:h-64 lg:h-96 xl:h-80">
               <div
                 class="w-full font-bold text-lg text-gray-800 text-center py-4 capitalize"
               >
@@ -201,9 +201,9 @@
               <p class="text-gray-800 text-base md:text-lg px-6 mb-5">
                 <ul class="list-disc list-outside space-y-3 pl-3">
                   <li>Multi request types: gRPC, HTTP, Websocket, SSL, DNS, TCP, UDP</li>
-                  <li>Uptime in 18 locations: Americas, Asia Pacific, EMEA</li>
+                  <li>Uptime in several locations: Americas, Asia Pacific, EMEA</li>
                   <li>Profiler: response time per layer, network traces</li>
-                  <li>Assertion tool: status, body, headers, response time, ...</li>
+                  <li>Assertion tool: status, body, headers, certificates</li>
                 </ul>
               </p>
             </div>
@@ -212,7 +212,7 @@
 
         <div class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
           <div class="card-border-wrap shadow hover:shadow-lg">
-            <div class="flex-1 overflow-hidden card bg-white md:h-64 lg:h-96">
+            <div class="flex-1 overflow-hidden card bg-white md:h-64 lg:h-96 xl:h-80">
               <div
                 class="w-full font-bold text-lg text-gray-800 text-center py-4 up capitalize"
               >
@@ -220,10 +220,10 @@
               </div>
               <p class="text-gray-800 text-base md:text-lg px-6 mb-5">
                 <ul class="list-disc list-outside space-y-3 pl-3">
-                  <li>Flexible rules: configure your own patterns to detect specific security threats</li>
+                  <li>Flexible rules: custom patterns to detect security threats</li>
                   <li>Web attacks: SQL injection, XSS, attack patterns</li>
                   <li>Bot detection: scanners, scrapers, crawlers</li>
-                  <li>Graphs and data: follow the threats per locations, IPs, endpoints, ...</li>
+                  <li>Metrics and logs: threats per locations, IPs, endpoints</li>
                 </ul>
               </p>
             </div>
@@ -232,7 +232,7 @@
 
         <div class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
           <div class="card-border-wrap shadow hover:shadow-lg">
-            <div class="flex-1 overflow-hidden card bg-white md:h-64 lg:h-96">
+            <div class="flex-1 overflow-hidden card bg-white md:h-64 lg:h-96 xl:h-80">
               <div
                 class="w-full font-bold text-lg text-gray-800 text-center py-4 capitalize"
               >
@@ -240,10 +240,10 @@
               </div>
               <p class="text-gray-800 text-base md:text-lg px-6 mb-5">
                 <ul class="list-disc list-outside space-y-3 pl-3">
-                  <li>Escalation tool: define your policies, thresholds (location, number of alerts, ...)</li>
-                  <li>Alerts configuration: who is on call, team rotations, notifications</li>
-                  <li>Integrations: SMS, emails, Slack, PagerDuty.</li>
-                  <li>Incident details: timeline, errors logs, people on call</li>
+                  <li>Escalation tool: custom policies, error thresholds</li>
+                  <li>Alerts configuration: people on call, team rotations, notifications</li>
+                  <li>Integrations: SMS, emails, Slack.</li>
+                  <li>Incident details: timeline, log and metric correlations</li>
                 </ul>
               </p>
             </div>
@@ -256,7 +256,7 @@
         <h1
           class="w-full my-2 text-4xl sm:text-5xl font-bold leading-tight text-center text-gray-800"
         >
-          About our early program
+          About our early access
         </h1>
         <div class="w-full mb-12">
           <div
@@ -268,7 +268,7 @@
             class="max-w-5xl mx-auto text-center tracking-wide text-lg lg:text-2xl md:px-2"
           >
             We develop our tools in direct coordination with developers,
-            testers, security engineers, and CTOs. Our early program allow them
+            testers, security engineers, and CTOs. Our early access allow them
             to discover our platform, start to build their monitoring strategy
             and provide feedback to our team so we can improve our services and
             products to better suit their needs.
@@ -338,7 +338,7 @@
         class="mt-6 text-xl md:text-2xl leading-tight text-center mx-auto max-w-4xl px-5 md:px-10"
       >
         By subscribing now, you benefit from free access to the services and
-        products of the <i>early program</i> and will receive e-mails from our newsletter.
+        products of the <i>early access</i> and will receive e-mails from our newsletter.
       </h3>
 
       <p class="mt-3 mb-6 text-xl">

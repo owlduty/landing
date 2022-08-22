@@ -21,7 +21,7 @@
         <router-link
           id="navAction"
           :to="{ name: 'Home', hash: '#subscription' }"
-          class="mr-4 hover:underline rounded-full bg-white text-gray-800 font-bold mt-4 py-3 px-8 md:py-4 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          class="mr-4 capitalize hover:underline rounded-full bg-white text-gray-800 font-bold mt-4 py-3 px-8 md:py-4 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
         >
           Early access
         </router-link>
